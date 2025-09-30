@@ -21,8 +21,8 @@ describe('Funcionalidade: Cadasto' , () => {
     });
 
     it.only('Deva completar o cadastro com sucesso - Usando variáveis', () => {
-        var email = faker.internet.email()
         var nome = faker.person.firstName()
+        var email = faker.internet.email(nome)
         var sobrenome = faker.person.lastName()
 
 
